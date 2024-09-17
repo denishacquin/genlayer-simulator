@@ -65,7 +65,7 @@ jobs:
       - name: Run ngrok tunnel
         timeout-minutes: 240 # The maximum time to run this job
         run: |
-          docker run --net=host -e NGROK_AUTHTOKEN=${{ secrets.NGROK_AUTHTOKEN }} ngrok/ngrok:latest http --domain=pipefish-promoted-chipmunk.ngrok-free.app 8080
+          docker run --net=host -e NGROK_AUTHTOKEN=${{ secrets.NGROK_AUTHTOKEN }} ngrok/ngrok:latest http --domain=positive-deciding-lobster.ngrok-free.app 8080
  
       - name: Shutdown Docker Compose
         if: always()
